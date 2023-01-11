@@ -2,5 +2,76 @@
 title: Packages and modules
 ---
 
-<!-- edit the output of Index in `src/nav-base.yml` -->
+---
+			var N = b.Z.div(I()),
+				C = n(49690),
+				S = n(500),
+				Z = n(31501),
+				L = n(61079),
+				P = n(89874),
+				E = n(23221),
+				M = n(80836),
+				O = n(36613);
+			n(24638);
+			var R = function() {
+				return {
+					thread: (0, M.f1)(),
+					currentLeafId: "root",
+					threadId: null,
+					title: "New chat"
+				}
+			};
+      
+---      
+			function T() {
+				return (T = (0, r.Z)(function(e, t, n) {
+					var r, i, s;
+					return (0, a.__generator)(this, function(a) {
+						switch (a.label) {
+							case 0:
+								r = null, a.label = 1;
+							case 1:
+								if (a.trys.push([1, 4, , 5]), !e) return [3, 3];
+								return [4, E.ZP.getConversation(e, n, t)];
+							case 2:
+								var o, c, u, l, d;
+								return u = null === (c = Object.values((o = r = a.sent()).mapping).find(function(e) {
+									return null === e.parent
+								})) || void 0 === c ? void 0 : c.id, l = new Set, d = new Set, [2, {
+									thread: ((o.moderation_results || []).forEach(function(e) {
+										e.blocked ? d.add(e.message_id) : e.flagged && l.add(e.message_id)
+									}), i = {
+										rootId: u,
+										mapping: Object.keys(o.mapping).reduce(function(e, t) {
+											var n, r = o.mapping[t],
+												a = r.parent,
+												i = r.children,
+												s = (0, P.Z)(r, ["parent", "children"]),
+												c = o.mapping[t].message || (0, M.mH)();
+											return d.has(c.id) ? n = O.sK : l.has(c.id) && (n = O.Mf), e[t] = (0, Z.Z)((0, L.Z)((0, Z.Z)({}, s), {
+												message: c,
+												children: i || [],
+												parentId: a || "",
+												type: M.uV[c.role]
+											}), n && {
+												metadata: n
+											}), e
+										}, {}),
+										currentLeafId: o.current_node
+									}).mapping || (0, M.f1)(),
+									currentLeafId: i.currentLeafId || i.rootId || "root",
+									threadId: e,
+									title: r.title || null
+								}];
+							case 3:
+								return [3, 5];
+							case 4:
+								return s = a.sent(), console.error(s), [3, 5];
+							case 5:
+								return [2, R()]
+						}
+					})
+				})).apply(this, arguments)
+			
+---      
 <Index />
